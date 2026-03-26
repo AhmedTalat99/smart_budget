@@ -1,6 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:smart_budget/core/config/injection.dart';
+import 'package:smart_budget/features/authentication/presentation/bloc/auth_bloc.dart';
+import 'package:smart_budget/features/authentication/presentation/pages/auth_wrapper.dart';
+import 'package:smart_budget/features/authentication/presentation/pages/login_page.dart';
+import 'package:smart_budget/features/authentication/presentation/pages/signup_page.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async{
+    WidgetsFlutterBinding.ensureInitialized();
+
+await Supabase.initialize(
+  url: 'https://hjoyjogottrhwhbbveyc.supabase.co',
+  anonKey: 'sb_publishable_PPrC4ctAz0vazJSkBOdcZA_bStz3OCT',
+);
+
+ // Initialize dependency injection
+  await configureDependencies();
+  
   runApp(const MainApp());
 }
 
@@ -9,12 +26,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => getIt<AuthBloc>(),
         ),
-      ),
+      ],
+      child: MaterialApp(home: AuthWrapper()),
     );
   }
 }
