@@ -74,7 +74,8 @@ Smart Expense Tracker is a full-stack mobile application that helps users manage
 
 | Analytics |
 |:---------:|:----------------:|:-------:|
-| ![Analytics](<img width="562" height="911" alt="2 tracker" src="https://github.com/user-attachments/assets/79cb500f-01aa-41ae-bc38-604d3cebb527" />) 
+| ![Analytics](<img width="562" height="911" alt="2 tracker" src="https://github.com/user-attachments/assets/a1ceb309-6ed5-4873-8eae-88269a85f4d9" />
+) 
 </div>
 
 > 
