@@ -2,7 +2,8 @@
 
 <div align="center">
 
-<img width="467" height="793" alt="5 tracker" src="https://github.com/user-attachments/assets/8e9936b0-3dc9-45d9-a56b-25ea6e56bc49" />
+<img width="551" height="905" alt="1 tracker" src="https://github.com/user-attachments/assets/3d64a51d-a390-435b-b429-11ef815c9d84" />
+
 
 **A modern, feature-rich expense tracking application built with Flutter & Supabase**
 
