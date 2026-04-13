@@ -74,8 +74,8 @@ Smart Expense Tracker is a full-stack mobile application that helps users manage
 
 | Analytics |
 |:---------:|:----------------:|:-------:|
-| ![Analytics](<img width="562" height="911" alt="2 tracker" src="https://github.com/user-attachments/assets/a1ceb309-6ed5-4873-8eae-88269a85f4d9" />
-) 
+|![Analytics](<img width="562" height="911" alt="2 tracker" src="https://github.com/user-attachments/assets/a1ceb309-6ed5-4873-8eae-88269a85f4d9" />
+
 </div>
 
 > 
@@ -333,7 +333,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Ahmed Talat**
 
 - GitHub: [@AhmedTalat99](https://github.com/AhmedTalat99)
-- LinkedIn: [Ahmed Tala](www.linkedin.com/in/ahmed-talat-41243b3bb)
+- LinkedIn: [Ahmed Talat](www.linkedin.com/in/ahmed-talat-41243b3bb)
 - Email: ahmed99talat@gmail.com
 
 ---
@@ -368,8 +368,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or need help, feel free to:
 
 - Open an [issue](https://github.com/yourusername/smart-expense-tracker/issues)
-- Email: your.email@example.com
-- Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- Email: ahmed99talat@gmail.com
+- LinkedIn: [Ahmed Talat](www.linkedin.com/in/ahmed-talat-41243b3bb)
 
 ---
 
