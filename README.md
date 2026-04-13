@@ -3,12 +3,6 @@
 <div align="center">
 
 <img width="467" height="793" alt="5 tracker" src="https://github.com/user-attachments/assets/8e9936b0-3dc9-45d9-a56b-25ea6e56bc49" />
-<img width="216" height="262" alt="4 tracker" src="https://github.com/user-attachments/assets/08c2ab3b-9115-4994-b0d5-92290d53159a" />
-<img width="587" height="912" alt="3 tracker" src="https://github.com/user-attachments/assets/23fe1dcc-3931-4788-b497-3ebf3b961635" />
-<img width="562" height="911" alt="2 tracker" src="https://github.com/user-attachments/assets/8ccc9d9c-df48-4857-ac02-0403ed1afe7a" />
-<img width="551" height="905" alt="1 tracker" src="https://github.com/user-attachments/assets/12320c12-fd16-4c7f-a7b2-8c48fce4d4c8" />
-<img width="473" height="747" alt="6 tracker" src="https://github.com/user-attachments/assets/4c7c35e5-1b98-4115-9884-d7f9a27f893f" />
-
 
 **A modern, feature-rich expense tracking application built with Flutter & Supabase**
 
@@ -72,7 +66,10 @@ Smart Expense Tracker is a full-stack mobile application that helps users manage
 
 | Login Screen | Home Dashboard | Add Expense |
 |:------------:|:--------------:|:-----------:|
-| ![Login](https://via.placeholder.com/250x500/667eea/ffffff?text=Login+Screen) | ![Home](https://via.placeholder.com/250x500/764ba2/ffffff?text=Dashboard) | ![Add](https://via.placeholder.com/250x500/f093fb/ffffff?text=Add+Expense) |
+| ![Login](<img width="473" height="747" alt="6 tracker" src="https://github.com/user-attachments/assets/502e2f26-96f9-4045-b7d0-827a7a74bc90" />
+) | ![Home](<img width="551" height="905" alt="1 tracker" src="https://github.com/user-attachments/assets/9f8323d5-bc11-4fce-aa26-ef28a045e9a2" />
+) | ![Add](<img width="587" height="912" alt="3 tracker" src="https://github.com/user-attachments/assets/c746cd4b-39d5-45d7-a9e2-b046e5bd171f" />
+) |
 
 | Analytics | Category Details | Profile |
 |:---------:|:----------------:|:-------:|
@@ -80,7 +77,7 @@ Smart Expense Tracker is a full-stack mobile application that helps users manage
 
 </div>
 
-> **Note:** Replace placeholder images with actual screenshots
+> 
 
 ---
 
@@ -332,11 +329,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Ahmed Talat**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@AhmedTalat99](https://github.com/AhmedTalat99)
+- LinkedIn: [Ahmed Tala](www.linkedin.com/in/ahmed-talat-41243b3bb)
+- Email: ahmed99talat@gmail.com
 
 ---
 
