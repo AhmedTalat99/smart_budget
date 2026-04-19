@@ -2,9 +2,6 @@
 
 <div align="center">
 
-<img width="551" height="905" alt="1 tracker" src="https://github.com/user-attachments/assets/3d64a51d-a390-435b-b429-11ef815c9d84" />
-
-
 **A modern, feature-rich expense tracking application built with Flutter & Supabase**
 
 [Features](#-features) • [Screenshots](#-screenshots) • [Tech Stack](#-tech-stack) • [Architecture](#-architecture) • [Getting Started](#-getting-started)
@@ -61,24 +58,35 @@ Smart Expense Tracker is a full-stack mobile application that helps users manage
 
 ---
 
-## 📱 Screenshots
+## 📸 Screenshots
 
 <div align="center">
 
-| Login Screen | Home Dashboard | Add Expense |
-|:------------:|:--------------:|:-----------:|
-| ![Login](<img width="473" height="747" alt="6 tracker" src="https://github.com/user-attachments/assets/502e2f26-96f9-4045-b7d0-827a7a74bc90" />
-) | ![Home](<img width="551" height="905" alt="1 tracker" src="https://github.com/user-attachments/assets/9f8323d5-bc11-4fce-aa26-ef28a045e9a2" />
-) | ![Add](<img width="587" height="912" alt="3 tracker" src="https://github.com/user-attachments/assets/c746cd4b-39d5-45d7-a9e2-b046e5bd171f" />
-) |
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/502e2f26-96f9-4045-b7d0-827a7a74bc90" width="220"/>
+      <br/><b>Login</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9f8323d5-bc11-4fce-aa26-ef28a045e9a2" width="220"/>
+      <br/><b>Home</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c746cd4b-39d5-45d7-a9e2-b046e5bd171f" width="220"/>
+      <br/><b>Add Expense</b>
+    </td>
+  </tr>
 
-| Analytics |
-|:---------:|:----------------:|:-------:|
-|![Analytics](<img width="562" height="911" alt="2 tracker" src="https://github.com/user-attachments/assets/a1ceb309-6ed5-4873-8eae-88269a85f4d9" />
+  <tr>
+    <td align="center" colspan="3">
+      <img src="https://github.com/user-attachments/assets/a1ceb309-6ed5-4873-8eae-88269a85f4d9" width="300"/>
+      <br/><b>Analytics</b>
+    </td>
+  </tr>
+</table>
 
 </div>
-
-> 
 
 ---
 
