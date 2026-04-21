@@ -4,8 +4,7 @@ import 'package:injectable/injectable.dart';
 import 'package:smart_budget/core/error/failures.dart';
 import 'package:smart_budget/features/authentication/data/models/user_model.dart';
 
-import 'package:smart_budget/features/authentication/domain/entities/user.dart'
-    as domain;
+import 'package:smart_budget/features/authentication/domain/entities/user.dart' as domain;
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../domain/repositories/auth_repository.dart';

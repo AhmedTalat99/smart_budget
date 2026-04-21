@@ -3,6 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smart_budget/features/authentication/presentation/bloc/auth_bloc.dart';
 import 'package:smart_budget/features/authentication/presentation/pages/login_page.dart';
 
+import '../../../expenses/presentation/pages/home_page.dart';
+
 class AuthWrapper extends StatefulWidget {
   const AuthWrapper({super.key});
 
@@ -27,7 +29,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
         if (state is AuthLoading) {
           return Scaffold(body: Center(child: CircularProgressIndicator()));
         } else if (state is Authenticated) {
-          return Scaffold(body: Center(child: Text("Home Page"))); // home page will go here
+          return HomePage(); 
         } else {
           return  LoginPage();
         }
