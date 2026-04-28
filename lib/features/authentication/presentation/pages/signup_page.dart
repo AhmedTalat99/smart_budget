@@ -28,13 +28,15 @@ class _SignupPageState extends State<SignupPage> {
     super.dispose();
   }
 
-  void _handleSignUp(){
-    if(_formKey.currentState!.validate()){
-      context.read<AuthBloc>().add(SignUpRequested(
-        _emailController.text.trim(),
-        _passwordController.text.trim(),  
-        _nameController.text.trim(),
-      ));
+  void _handleSignUp() {
+    if (_formKey.currentState!.validate()) {
+      context.read<AuthBloc>().add(
+        SignUpRequested(
+          _emailController.text.trim(),
+          _passwordController.text.trim(),
+          _nameController.text.trim(),
+        ),
+      );
     }
   }
 
@@ -120,44 +122,49 @@ class _SignupPageState extends State<SignupPage> {
                       enabled: !isLoading,
                     ),
                     const SizedBox(height: 16),
-                
-                                        // Confirm password field
-                      TextFormField(
-                        controller: _confirmPasswordController,
-                        obscureText: _obscureConfirmPassword,
-                        decoration: InputDecoration(
-                          labelText: 'Confirm Password',
-                          prefixIcon: const Icon(Icons.lock_outlined),
-                          suffixIcon: IconButton(
-                            icon: Icon(
-                              _obscureConfirmPassword
-                                  ? Icons.visibility_outlined
-                                  : Icons.visibility_off_outlined,
-                            ),
-                            onPressed: () {
-                              setState(() {
-                                _obscureConfirmPassword = !_obscureConfirmPassword;
-                              });
-                            },
+
+                    // Confirm password field
+                    TextFormField(
+                      controller: _confirmPasswordController,
+                      obscureText: _obscureConfirmPassword,
+                      decoration: InputDecoration(
+                        labelText: 'Confirm Password',
+                        prefixIcon: const Icon(Icons.lock_outlined),
+                        suffixIcon: IconButton(
+                          icon: Icon(
+                            _obscureConfirmPassword
+                                ? Icons.visibility_outlined
+                                : Icons.visibility_off_outlined,
                           ),
+                          onPressed: () {
+                            setState(() {
+                              _obscureConfirmPassword =
+                                  !_obscureConfirmPassword;
+                            });
+                          },
                         ),
-                        validator: (value) {
-                          if (value == null || value.isEmpty) {
-                            return 'Please confirm your password';
-                          }
-                          if (value != _passwordController.text) {
-                            return 'Passwords do not match';
-                          }
-                          return null;
-                        },
-                        enabled: !isLoading,
                       ),
-                      const SizedBox(height: 32),
-                      // Signup button      
-                                 ElevatedButton(
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'Please confirm your password';
+                        }
+                        if (value != _passwordController.text) {
+                          return 'Passwords do not match';
+                        }
+                        return null;
+                      },
+                      enabled: !isLoading,
+                    ),
+                    const SizedBox(height: 32),
+                    // Signup button
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton(
                         onPressed: isLoading ? null : _handleSignUp,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Theme.of(context).colorScheme.primary,
+                          backgroundColor: Theme.of(
+                            context,
+                          ).colorScheme.primary,
                           foregroundColor: Colors.white,
                         ),
                         child: isLoading
@@ -170,7 +177,8 @@ class _SignupPageState extends State<SignupPage> {
                                 ),
                               )
                             : const Text('Create Account'),
-                      ),  
+                      ),
+                    ),
                   ],
                 ),
               ),

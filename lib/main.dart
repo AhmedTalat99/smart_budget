@@ -7,6 +7,8 @@ import 'package:smart_budget/features/authentication/presentation/pages/auth_wra
 import 'package:smart_budget/features/expenses/presentation/bloc/expense_bloc.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'features/analytics/presentation/bloc/analytics_bloc.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -27,18 +29,22 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => getIt<AuthBloc>()),
+      providers: [
+        BlocProvider(create: (context) => getIt<AuthBloc>()),
       BlocProvider(
         create: (context) =>getIt<ExpenseBloc>(),
-      )
+      ),
+      BlocProvider(
+        create: (_) => getIt<AnalyticsBloc>(),
+      ),
       ],
       child: MaterialApp(
         title: 'Smart Budget',
         debugShowCheckedModeBanner: false,
-        theme: AppTheme.darkTheme,
+        theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.dark,
-        home: AuthWrapper(),
+        home:const AuthWrapper(),
       ),
     );
   }

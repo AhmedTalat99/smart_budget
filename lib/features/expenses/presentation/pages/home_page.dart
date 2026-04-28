@@ -5,6 +5,8 @@ import 'package:smart_budget/features/expenses/presentation/bloc/expense_bloc.da
 import 'package:smart_budget/features/expenses/presentation/pages/add_expense_page.dart';
 import 'package:smart_budget/features/expenses/presentation/widgets/expense_list.dart';
 
+import '../../../analytics/presentation/bloc/analytics_bloc.dart';
+import '../../../analytics/presentation/pages/analytics_page.dart';
 import '../widgets/expense_summary.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _navigateToAnalytics() {
-   /*  Navigator.push(
+      Navigator.push(
       context,
       MaterialPageRoute(
         builder: (_) => BlocProvider.value(
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage> {
           child: AnalyticsPage(),
         ),
       ),
-    ); */
+    ); 
   }
 
   @override
@@ -80,8 +82,9 @@ class _HomePageState extends State<HomePage> {
             ],
             onSelected: (value) {
               // onSelected==>activates when the user selects an item from the menu
-              WidgetsBinding.instance.addPostFrameCallback((_) {      // "Wait until the UI build is complete, then execute the code."
-                if (!mounted)return; //This checks that the page is still there (not closed) before you do anything.
+              WidgetsBinding.instance.addPostFrameCallback((_) {
+                // "Wait until the UI build is complete, then execute the code."
+                if (!mounted) return; //This checks that the page is still there (not closed) before you do anything.
                 switch (value) {
                   case 'profile':
                     _navigateToProfile();
